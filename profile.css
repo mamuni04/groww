@@ -83,8 +83,8 @@ svg{display:block;fill:none;stroke:currentColor;stroke-linecap:round;stroke-line
 }
 
 .profile-topbar{
-  height:30px;
-  padding:0 26px 0 23px;
+  height:10px;
+  padding: 35px 26px 0 23px;
   display:flex;
   align-items:center;
   justify-content:space-between;
@@ -121,8 +121,8 @@ svg{display:block;fill:none;stroke:currentColor;stroke-linecap:round;stroke-line
 }
 
 .top-icon svg{
-  width:32px;
-  height:32px;
+  width: 25px;
+  height:25px;
   stroke-width:2;
 }
 
@@ -162,9 +162,9 @@ svg{display:block;fill:none;stroke:currentColor;stroke-linecap:round;stroke-line
 
 .orbit-text text{
   fill:#a8aab4;
-  font-size:8px;
+  font: size 10px;
   font-weight:400;
-  letter-spacing:2px;
+  letter-spacing:2.5px;
 }
 
 .avatar-core{
