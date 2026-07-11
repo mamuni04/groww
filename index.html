@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Groww" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="groww-logo-270.png" />
+  <link rel="icon" type="image/png" href="groww-logo-270.png" />
+  <title>Groww Stocks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="desktop-header">
+    <div class="header-row">
+      <a class="brand" href="index.html" aria-label="Groww home">
+        <img src="groww-logo-270.png" alt="" class="logo-img" />
+        <span>Groww</span>
+      </a>
+
+      <nav class="primary-nav" aria-label="Primary">
+        <a class="active" href="index.html">Stocks</a>
+        <a href="#">F&amp;O</a>
+        <a href="#">Mutual Funds</a>
+      </nav>
+
+      <label class="search">
+        <svg aria-hidden="true" viewBox="0 0 24 24">
+          <circle cx="11" cy="11" r="7"></circle>
+          <path d="m16.5 16.5 4 4"></path>
+        </svg>
+        <input placeholder="Search stocks, ETFs, IPOs" />
+        <small>Ctrl K</small>
+      </label>
+
+      <button class="icon-button" aria-label="Notifications">
+        <svg aria-hidden="true" viewBox="0 0 24 24">
+          <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 7h18s-3 0-3-7"></path>
+          <path d="M13.7 21a2 2 0 0 1-3.4 0"></path>
+        </svg>
+      </button>
+      <a class="profile" href="profile.html" aria-label="Profile">S</a>
+    </div>
+
+    <div class="nav-row">
+      <nav class="secondary-nav" aria-label="Stocks">
+        <a class="active" href="index.html">Explore</a>
+        <a href="holdings.html">Holdings</a>
+        <a href="#">Positions</a>
+        <a href="#">Orders</a>
+        <a href="#">Watchlist</a>
+      </nav>
+      <div class="nav-actions">
+        <button>
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M4 6h16M4 12h10M4 18h16"></path>
+          </svg>
+          Terminal
+        </button>
+        <button>915</button>
+      </div>
+    </div>
+
+    <div class="market-strip">
+      <div class="strip-inner">
+        <span><b>NIFTY</b> 24,206.90 <em>+244.10 (1.02%)</em></span>
+        <span><b>SENSEX</b> 77,569.39 <em>+827.57 (1.08%)</em></span>
+        <span><b>BANKNIFTY</b> 58,045.90 <em>+793.45 (1.39%)</em></span>
+        <span><b>MIDCPNIFTY</b> 14,820.90 <em>+166.10 (1.13%)</em></span>
+        <span><b>FINNIFTY</b> 26,831.05 <em>+195.20 (0.73%)</em></span>
+      </div>
+    </div>
+  </header>
+
+  <header class="mobile-header">
+    <div class="mobile-status-space"></div>
+
+    <div class="mobile-top-header">
+      <a class="mobile-brand" href="index.html" aria-label="Groww home">
+        <img src="groww-logo-270.png" class="mobile-logo" alt="" />
+        <h1>Stocks</h1>
+      </a>
+
+      <div class="mobile-header-actions">
+        <button class="mobile-search-button" aria-label="Search"></button>
+        <a class="mobile-profile" href="profile.html" aria-label="Profile">S</a>
+      </div>
+    </div>
+
+    <div class="mobile-market-strip">
+      <div class="mobile-market-track">
+        <div class="mobile-market-item">
+          <strong>NIFTY 50</strong>
+          <span>24,206.90</span>
+          <em>+1.02%</em>
+        </div>
+        <div class="mobile-market-item">
+          <strong>SENSEX</strong>
+          <span>77,569.39</span>
+          <em>+1.08%</em>
+        </div>
+        <div class="mobile-market-item">
+          <strong>BANK NIFTY</strong>
+          <span>58,045.90</span>
+          <em>+1.39%</em>
+        </div>
+      </div>
+    </div>
+
+    <nav class="mobile-tabs" aria-label="Mobile stocks">
+      <a href="index.html" class="active">Explore</a>
+      <a href="holdings.html">Holdings</a>
+      <a href="#">Positions</a>
+      <a href="#">Orders</a>
+      <a href="#">Watchlist</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="desktop-page">
+      <section class="desktop-left">
+        <section class="block">
+          <div class="section-heading">
+            <h1>Most traded stocks</h1>
+            <button class="text-link">See more</button>
+          </div>
+          <div class="traded-grid" id="tradedGrid"></div>
+        </section>
+
+        <section class="block movers">
+          <div class="section-heading">
+            <h1>Top movers today</h1>
+            <button class="text-link">View all</button>
+          </div>
+          <div class="filter-row" role="tablist" aria-label="Mover filters">
+            <button class="active" type="button">Gainers</button>
+            <button type="button">Losers</button>
+            <button type="button">Volume shockers</button>
+            <span class="divider" aria-hidden="true"></span>
+            <button type="button">NIFTY 100</button>
+          </div>
+
+          <div class="stock-table">
+            <div class="table-head">
+              <span>Company</span>
+              <span>Market price (1D)</span>
+              <span>Volume</span>
+            </div>
+            <div id="stockRows"></div>
+          </div>
+        </section>
+      </section>
+
+      <aside class="desktop-right">
+        <section class="block">
+          <h1>Your investments</h1>
+          <div class="investment-card">
+            <span class="muted">Current value</span>
+            <h2>&#8377;191</h2>
+            <div class="metric"><span>1D returns</span><strong>+&#8377;3.28 (1.75%)</strong></div>
+            <div class="metric"><span>Total returns</span><strong>+&#8377;77.09 (67.56%)</strong></div>
+            <div class="metric"><span>Invested</span><b>&#8377;114</b></div>
+          </div>
+        </section>
+
+        <section class="block tools-block">
+          <h1>Products &amp; tools</h1>
+          <div class="tools-card" id="toolsList"></div>
+        </section>
+      </aside>
+    </div>
+
+    <div class="mobile-page">
+      <section class="mobile-section">
+        <div class="mobile-title-row">
+          <h2>Market indices</h2>
+          <button class="green-pill">Screener</button>
+        </div>
+        <div class="horizontal-scroll" id="indicesRow"></div>
+      </section>
+
+      <section class="mobile-section">
+        <div class="mobile-title-row">
+          <h2>Top gainers <small>NIFTY 100</small></h2>
+          <button class="plain-green">See more</button>
+        </div>
+        <div class="horizontal-scroll" id="gainersRow"></div>
+      </section>
+
+      <section class="mobile-section">
+        <div class="mobile-title-row">
+          <h2>Stocks in news</h2>
+          <button class="green-pill">News</button>
+        </div>
+        <div class="horizontal-scroll" id="newsRow"></div>
+      </section>
+    </div>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Bottom navigation">
+    <a class="active" href="index.html">
+      <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 17l4-5 3 3 7-9"></path></svg>
+      <small>Stocks</small>
+    </a>
+    <a href="#">
+      <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 7h16v12H4z"></path><path d="M8 7V5h8v2"></path></svg>
+      <small>Funds</small>
+    </a>
+  </nav>
+
+  <div id="installBanner" class="install-banner" hidden>
+    <div>
+      <strong>Install Groww Stocks</strong>
+      <span>Add it to your home screen for an app-like experience.</span>
+    </div>
+    <button id="installBtn">Install</button>
+    <button id="dismissInstall" aria-label="Dismiss">&times;</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

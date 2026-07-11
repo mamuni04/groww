@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="groww-logo-270.png" />
+  <link rel="icon" type="image/png" href="groww-logo-270.png" />
+  <title>Groww Profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="profile.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="header-row">
+      <a class="brand" href="index.html" aria-label="Groww home">
+        <img src="groww-logo-270.png" alt="" />
+        <span>Groww</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary">
+        <a href="index.html">Explore</a>
+        <a href="holdings.html">Holdings</a>
+        <a href="#">Orders</a>
+      </nav>
+
+      <a class="back-link" href="index.html">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="m15 18-6-6 6-6"></path>
+        </svg>
+        Stocks
+      </a>
+    </div>
+  </header>
+
+  <main class="profile-page">
+    <section class="profile-hero">
+      <div class="avatar-wrap">
+        <div class="avatar">S</div>
+        <span class="verified-dot" aria-label="Verified"></span>
+      </div>
+
+      <div class="profile-copy">
+        <p>PROFILE</p>
+        <h1>Shreyas S</h1>
+        <span>shreyas@example.com</span>
+      </div>
+
+      <div class="kyc-card">
+        <span>KYC status</span>
+        <strong>Verified</strong>
+      </div>
+    </section>
+
+    <section class="stats-grid" aria-label="Account summary">
+      <article>
+        <span>Groww balance</span>
+        <strong>&#8377;915.00</strong>
+      </article>
+      <article>
+        <span>Stocks value</span>
+        <strong>&#8377;2,24,022</strong>
+      </article>
+      <article>
+        <span>Total returns</span>
+        <strong class="negative">-8.81%</strong>
+      </article>
+    </section>
+
+    <section class="quick-actions" aria-label="Quick actions">
+      <button>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg>
+        Add money
+      </button>
+      <button>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5"></path><path d="m5 12 7-7 7 7"></path></svg>
+        Withdraw
+      </button>
+      <button>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h8l4 4v14H7z"></path><path d="M15 3v5h5"></path><path d="M10 13h6"></path><path d="M10 17h6"></path></svg>
+        Reports
+      </button>
+    </section>
+
+    <div class="profile-layout">
+      <section class="panel">
+        <div class="panel-title">
+          <h2>Account</h2>
+          <span>Active</span>
+        </div>
+
+        <a class="menu-row" href="#">
+          <span class="menu-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21a8 8 0 1 0-16 0"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          </span>
+          <div>
+            <strong>Personal details</strong>
+            <small>PAN, email, mobile number</small>
+          </div>
+          <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
+        </a>
+
+        <a class="menu-row" href="#">
+          <span class="menu-icon blue">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16v12H4z"></path><path d="M8 7V5h8v2"></path></svg>
+          </span>
+          <div>
+            <strong>Bank and mandates</strong>
+            <small>HDFC Bank ending 2241</small>
+          </div>
+          <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
+        </a>
+
+        <a class="menu-row" href="#">
+          <span class="menu-icon amber">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"></path></svg>
+          </span>
+          <div>
+            <strong>Security</strong>
+            <small>PIN, biometrics, sessions</small>
+          </div>
+          <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
+        </a>
+      </section>
+
+      <section class="panel">
+        <div class="panel-title">
+          <h2>Manage</h2>
+        </div>
+
+        <a class="menu-row" href="#">
+          <span class="menu-icon violet">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13"></path><path d="M8 12h13"></path><path d="M8 18h13"></path><path d="M3 6h.01"></path><path d="M3 12h.01"></path><path d="M3 18h.01"></path></svg>
+          </span>
+          <div>
+            <strong>Orders and reports</strong>
+            <small>Contract notes, tax P&amp;L, statements</small>
+          </div>
+          <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
+        </a>
+
+        <a class="menu-row" href="#">
+          <span class="menu-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path></svg>
+          </span>
+          <div>
+            <strong>Help and support</strong>
+            <small>Tickets, FAQs, contact center</small>
+          </div>
+          <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
+        </a>
+
+        <a class="menu-row danger" href="#">
+          <span class="menu-icon red">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><path d="m16 17 5-5-5-5"></path><path d="M21 12H9"></path></svg>
+          </span>
+          <div>
+            <strong>Logout</strong>
+            <small>Sign out from this device</small>
+          </div>
+          <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
+        </a>
+      </section>
+    </div>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Bottom navigation">
+    <a href="index.html">
+      <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 17l4-5 3 3 7-9"></path></svg>
+      <small>Stocks</small>
+    </a>
+    <a href="holdings.html">
+      <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 7h16v12H4z"></path><path d="M8 7V5h8v2"></path></svg>
+      <small>Holdings</small>
+    </a>
+    <a class="active" href="profile.html">
+      <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20 21a8 8 0 1 0-16 0"></path><circle cx="12" cy="7" r="4"></circle></svg>
+      <small>Profile</small>
+    </a>
+  </nav>
+</body>
+</html>

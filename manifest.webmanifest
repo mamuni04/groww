@@ -1,0 +1,17 @@
+{
+  "name": "Groww",
+  "short_name": "Groww",
+  "description": "Responsive stock-market dashboard demo PWA.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons":[
+    {
+      "src":"groww-logo-270.png",
+      "sizes":"270x270",
+      "type":"image/png"
+    }
+  ]
+}
