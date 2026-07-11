@@ -248,27 +248,27 @@ svg{display:block}
 }
 
 .summary-top h2{
-  margin:12px 0 0;
+  margin:10px 0 0;
   color:#171d2a;
-  font-size:27px;
+  font-size:20px;
   line-height:1;
-  font-weight:800;
+  font-weight:600;
   white-space:nowrap;
 }
 
 .summary-actions{
   display:flex;
   align-items:center;
-  gap:8px;
+  gap:5px;
   flex:0 0 auto;
 }
 
 .round-button{
-  width:39px;
-  height:39px;
+  width:35px;
+  height:35px;
   display:grid;
   place-items:center;
-  padding:9px;
+  padding: 7px;
   border:1px solid var(--border);
   border-radius:50%;
   background:#fff;
@@ -301,7 +301,7 @@ svg{display:block}
 }
 
 .summary-divider{
-  margin:22px 0 18px;
+  margin:15px 0 14px;
   border-top:1px dashed #dde1e7;
 }
 
@@ -309,9 +309,9 @@ svg{display:block}
   display:flex;
   align-items:center;
   justify-content:space-between;
-  gap:12px;
-  margin-top:17px;
-  font-size:14px;
+  gap:5px;
+  margin-top:7px;
+  font-size:12px;
 }
 
 .summary-row span{
@@ -322,8 +322,8 @@ svg{display:block}
 .summary-row strong{
   min-width:0;
   color:#29303f;
-  font-size:14px;
-  font-weight:800;
+  font-size:12px;
+  font-weight:600;
   text-align:right;
 }
 
@@ -331,11 +331,11 @@ svg{display:block}
 .negative{color:var(--red)!important}
 
 .sort-bar{
-  min-height:68px;
+  min-height:50px;
   display:flex;
   align-items:center;
   justify-content:space-between;
-  gap:12px;
+  gap:7px;
 }
 
 .sort-button,.current-button{
@@ -370,7 +370,7 @@ svg{display:block}
 .holdings-list{width:100%}
 
 .holding-row{
-  min-height:112px;
+  min-height:80px;
   display:grid;
   grid-template-columns:minmax(0,1.1fr) minmax(78px,.9fr) minmax(108px,1fr);
   align-items:center;
