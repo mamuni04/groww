@@ -197,7 +197,7 @@ svg{display:block;fill:none;stroke:currentColor;stroke-linecap:round;stroke-line
 }
 
 .profile-row{
-  min-height:92px;
+  min-height:70px;
   display:grid;
   grid-template-columns:54px minmax(0,1fr) auto;
   align-items:center;
