@@ -33,21 +33,21 @@ svg{display:block;fill:none;stroke:currentColor;stroke-linecap:round;stroke-line
 }
 
 .status-bar{
-  height:82px;
-  padding:38px 38px 0;
+  height:60px;
+  padding:20px 20px 0;
   display:flex;
   align-items:flex-start;
   justify-content:space-between;
   color:#050507;
-  font-size:17px;
-  font-weight:800;
+  font-size:12px;
+  font-weight:600;
   letter-spacing:0;
 }
 
 .phone-icons{
   display:flex;
   align-items:center;
-  gap:9px;
+  gap:5px;
 }
 
 .phone-icons svg{
@@ -83,7 +83,7 @@ svg{display:block;fill:none;stroke:currentColor;stroke-linecap:round;stroke-line
 }
 
 .profile-topbar{
-  height:56px;
+  height:30px;
   padding:0 26px 0 23px;
   display:flex;
   align-items:center;
@@ -107,7 +107,7 @@ svg{display:block;fill:none;stroke:currentColor;stroke-linecap:round;stroke-line
 .top-actions{
   display:flex;
   align-items:center;
-  gap:21px;
+  gap:12px;
 }
 
 .top-icon{
@@ -138,7 +138,7 @@ svg{display:block;fill:none;stroke:currentColor;stroke-linecap:round;stroke-line
 }
 
 .identity{
-  padding:30px 20px 43px;
+  padding:10px 10px 10px;
   display:flex;
   flex-direction:column;
   align-items:center;
@@ -146,8 +146,8 @@ svg{display:block;fill:none;stroke:currentColor;stroke-linecap:round;stroke-line
 }
 
 .avatar-orbit{
-  width:164px;
-  height:164px;
+  width:120px;
+  height:120px;
   display:grid;
   place-items:center;
   position:relative;
@@ -158,19 +158,18 @@ svg{display:block;fill:none;stroke:currentColor;stroke-linecap:round;stroke-line
   inset:0;
   width:100%;
   height:100%;
-  animation:slow-spin 30s linear infinite;
 }
 
 .orbit-text text{
   fill:#a8aab4;
-  font-size:14px;
+  font-size:10px;
   font-weight:500;
   letter-spacing:2px;
 }
 
 .avatar-core{
-  width:98px;
-  height:98px;
+  width:90px;
+  height:90px;
   display:grid;
   place-items:center;
   border-radius:50%;
@@ -183,7 +182,7 @@ svg{display:block;fill:none;stroke:currentColor;stroke-linecap:round;stroke-line
 
 .identity h1{
   max-width:100%;
-  margin:25px 0 0;
+  margin:15px 0 0;
   color:#3e4051;
   font-size:26px;
   line-height:1.15;
@@ -210,7 +209,7 @@ svg{display:block;fill:none;stroke:currentColor;stroke-linecap:round;stroke-line
 .profile-row:after{
   content:"";
   position:absolute;
-  left:70px;
+  left:50px;
   right:0;
   bottom:0;
   height:1px;
@@ -255,13 +254,13 @@ svg{display:block;fill:none;stroke:currentColor;stroke-linecap:round;stroke-line
 
 .row-copy small{
   color:#858794;
-  font-size:15px;
+  font-size:10px;
   line-height:1.2;
   font-weight:500;
 }
 
 .action-pill{
-  min-height:38px;
+  min-height:30px;
   display:inline-flex;
   align-items:center;
   justify-content:center;
@@ -269,8 +268,8 @@ svg{display:block;fill:none;stroke:currentColor;stroke-linecap:round;stroke-line
   border-radius:9px;
   background:var(--green-soft);
   color:#14a982;
-  padding:0 15px;
-  font-size:14px;
+  padding:0 10px;
+  font-size:10px;
   font-weight:800;
   white-space:nowrap;
 }
@@ -282,13 +281,13 @@ svg{display:block;fill:none;stroke:currentColor;stroke-linecap:round;stroke-line
 }
 
 .tax-pill{
-  padding:0 14px;
+  padding:0 10px;
 }
 
 .tax-pill b{
   font-size:24px;
   line-height:0;
-  font-weight:700;
+  font-weight:500;
 }
 
 @keyframes slow-spin{
